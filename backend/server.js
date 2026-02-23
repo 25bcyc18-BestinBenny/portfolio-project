@@ -21,13 +21,6 @@ const db = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0
 });
-db.connect(err => {
-  if (err) {
-    console.error("Database connection failed:", err);
-  } else {
-    console.log("Connected to database");
-  }
-});
 // Test route
 app.get("/", (req, res) => {
   res.send("Backend running");

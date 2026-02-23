@@ -8,7 +8,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     };
 
     try {
-        const response = await fetch("http://localhost:5000/contact", {
+        const response = await fetch("https://portfolio-project-production-4aba.up.railway.app/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
